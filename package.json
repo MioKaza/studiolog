@@ -1,0 +1,70 @@
+{
+    "name": "@miokazalabs/studiolog",
+    "version": "0.1.0",
+    "description": "Premium in-app debug console for React applications",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./styles.css": "./dist/studiolog.css"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "lint": "eslint src --ext .ts,.tsx",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest",
+        "test:run": "vitest run",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "console",
+        "debug",
+        "devtools",
+        "logging",
+        "react",
+        "terminal",
+        "tauri"
+    ],
+    "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18",
+        "framer-motion": ">=10",
+        "lucide-react": ">=0.200.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^6.0.0",
+        "@testing-library/react": "^14.0.0",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "@vitejs/plugin-react": "^4.2.0",
+        "eslint": "^8.50.0",
+        "framer-motion": "^10.0.0",
+        "jsdom": "^22.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tsup": "^8.0.0",
+        "typescript": "^5.3.0",
+        "vitest": "^1.0.0"
+    },
+    "author": "Mio Kaza",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miokaza/studiolog"
+    },
+    "homepage": "https://github.com/miokazalabs/studiolog#readme",
+    "bugs": {
+        "url": "https://github.com/miokazalabs/studiolog/issues"
+    }
+}

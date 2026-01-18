@@ -1,0 +1,133 @@
+/* ═══════════════════════════════════════════════════════════════
+   FONT LOADING - Bundled with StudioLog
+   ═══════════════════════════════════════════════════════════════ */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   COLOR PALETTE - Inspired by Rich Terminal Theme
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+    --sl-bg: #282a36;
+    --sl-bg-darker: #21222c;
+    --sl-bg-lighter: #44475a;
+
+    --sl-fg: #f8f8f2;
+    --sl-fg-dim: #6272a4;
+
+    --sl-cyan: #8be9fd;
+    --sl-orange: #ffb86c;
+    --sl-pink: #ff79c6;
+    --sl-purple: #bd93f9;
+    --sl-red: #ff5555;
+    --sl-yellow: #f1fa8c;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BASE SHELL STYLES
+   ═══════════════════════════════════════════════════════════════ */
+.studiolog-shell {
+    font-family: 'JetBrains Mono', 'Menlo', 'Monaco', monospace !important;
+    font-size: 12px;
+    font-weight: 600;
+    /* Regular text is now SemiBold */
+    line-height: 1.6;
+    background-color: var(--sl-bg);
+    color: var(--sl-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.studiolog-shell * {
+    font-family: 'JetBrains Mono', 'Menlo', 'Monaco', monospace !important;
+}
+
+/* Bold variant for labels */
+.sl-bold {
+    font-weight: 800 !important;
+    /* Tags are now ExtraBold */
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CUSTOM SCROLLBAR
+   ═══════════════════════════════════════════════════════════════ */
+.studiolog-shell ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.studiolog-shell ::-webkit-scrollbar-track {
+    background: var(--sl-bg-darker);
+}
+
+.studiolog-shell ::-webkit-scrollbar-thumb {
+    background: var(--sl-bg-lighter);
+    border: 2px solid var(--sl-bg);
+    border-radius: 6px;
+}
+
+.studiolog-shell ::-webkit-scrollbar-thumb:hover {
+    background: var(--sl-fg-dim);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SELECTION
+   ═══════════════════════════════════════════════════════════════ */
+.studiolog-shell ::selection {
+    background-color: var(--sl-purple);
+    color: var(--sl-bg);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLINKING CURSOR
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes sl-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.sl-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: var(--sl-cyan);
+    vertical-align: middle;
+    margin-left: 2px;
+    animation: sl-blink 1s step-end infinite;
+}
