@@ -20,14 +20,14 @@ StudioLog is a beautiful, terminal-style debug console that lives inside your ap
 ## Installation
 
 ```bash
-npm install @miokazalabs/studiolog
+npm install @miokaza/studiolog
 ```
 
 ## Usage
 
 ```tsx
-import { Peek } from '@miokazalabs/studiolog'
-import '@miokazalabs/studiolog/styles.css'
+import { Peek } from '@miokaza/studiolog'
+import '@miokaza/studiolog/styles.css'
 
 export default function App({ children }) {
   return (
