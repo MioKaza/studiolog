@@ -1,4 +1,4 @@
-# 📺 StudioLog
+# StudioLog
 
 **Premium in-app debug console for React applications.**
 
@@ -6,7 +6,7 @@ StudioLog is a beautiful, terminal-style debug console that lives inside your ap
 
 ![StudioLog Demo](https://raw.githubusercontent.com/miokazalabs/studiolog/main/demo.gif)
 
-## ✨ Features
+## Features
 
 - **Resident Console** - Always available within your app window
 - **Terminal Commands** - `filter`, `grep`, `export`, `theme`, and more
@@ -17,13 +17,13 @@ StudioLog is a beautiful, terminal-style debug console that lives inside your ap
 - **Zero Network** - All data stays local, no telemetry
 - **TypeScript** - Full type definitions included
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install @miokazalabs/studiolog
 ```
 
-## 🛠 Usage
+## Usage
 
 ```tsx
 import { Peek } from '@miokazalabs/studiolog'
@@ -39,7 +39,7 @@ export default function App({ children }) {
 }
 ```
 
-## ⌨️ Commands
+## Commands
 
 | Command | Description |
 |---------|-------------|
@@ -56,20 +56,20 @@ export default function App({ children }) {
 | `memory` | Show JS heap usage |
 | `fps` | Show current frame rate |
 
-## 🎨 Themes
+## Themes
 
 - **Dracula** (default) - Purple-tinted dark theme
 - **Nord** - Cool, arctic color palette
 - **Matrix** - Retro green-on-black
 - **Synthwave** - Neon 80s aesthetic
 
-## 🔧 Props
+## Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `enabled` | `boolean` | `true` | Enable/disable the console |
 
-## 🏗️ Development
+## Development
 
 ```bash
 # Install dependencies
@@ -85,6 +85,6 @@ npm run build
 npm run dev
 ```
 
-## 📄 License
+## License
 
 MIT © Mio Kaza Labs

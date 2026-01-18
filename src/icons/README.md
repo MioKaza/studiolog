@@ -4,11 +4,11 @@ The Peek debug tool includes a flexible icon system that allows you to replace t
 
 ## Features
 
-- ✅ **SVG Support**: Use custom SVG icons
-- ✅ **Image Support**: Use PNG, JPG, or other image formats
-- ✅ **Font Icons**: Use icon fonts like Font Awesome
-- ✅ **NPM Package Ready**: All icons are bundled and work in published packages
-- ✅ **TypeScript Support**: Full type safety for icon configuration
+- **SVG Support**: Use custom SVG icons
+- **Image Support**: Use PNG, JPG, or other image formats
+- **Font Icons**: Use icon fonts like Font Awesome
+- **NPM Package Ready**: All icons are bundled and work in published packages
+- **TypeScript Support**: Full type safety for icon configuration
 
 ## Available Icons
 

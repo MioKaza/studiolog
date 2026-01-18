@@ -4,8 +4,8 @@ import React from 'react'
 
 export function TestLogger() {
   const testLogs = () => {
-    console.log('Hello from StudioLog! 👋')
-    console.info('System status: All systems operational 🚀')
+    console.log('Hello from StudioLog!')
+    console.info('System status: All systems operational')
     console.log('Testing object logging:', { user: 'developer', timestamp: new Date() })
     console.warn('Network latency detected (simulated)')
     console.error('Failed to synchronize data: Permission denied')

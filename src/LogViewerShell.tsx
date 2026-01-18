@@ -138,7 +138,7 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
         const banner = `
 ╔══════════════════════════════════════════════════╗
 ║                                                  ║
-║   S T U D I O   ░▒▓█  L O G  █▓▒░   v2.1  ✨     ║
+║   S T U D I O   ░▒▓█  L O G  █▓▒░   v2.1        ║
 ║                                                  ║
 ╚══════════════════════════════════════════════════╝`
 
@@ -436,7 +436,7 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
         //  ENV
         // ═══════════════════════════════════════════════════════════════
         else if (c === 'env') {
-            output = `\n╔══════════════════════════════════════╗\n║  ENVIRONMENT                         ║\n╠══════════════════════════════════════╣\n║  NODE_ENV:      ${(process.env.NODE_ENV || 'development').padEnd(18)}  ║\n║  Platform:      ${(typeof navigator !== 'undefined' ? navigator.platform : 'unknown').padEnd(18)}  ║\n║  Session:       ${sessionId.padEnd(18)}  ║\n╚══════════════════════════════════════╝`
+            output = `\n╔══════════════════════════════════════╗\n║  ENVIRONMENT                         ║\n╠══════════════════════════════════════╣\n║  NODE_ENV:      ${(typeof process !== 'undefined' ? process.env.NODE_ENV : 'development').padEnd(18)}  ║\n║  Platform:      ${(typeof navigator !== 'undefined' ? navigator.platform : 'unknown').padEnd(18)}  ║\n║  Session:       ${sessionId.padEnd(18)}  ║\n╚══════════════════════════════════════╝`
         }
         // ═══════════════════════════════════════════════════════════════
         //  ANALYZE
