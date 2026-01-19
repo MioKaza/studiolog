@@ -1,21 +1,24 @@
 # StudioLog
 
-**Premium in-app debug console for React applications.**
+**The essential in-app terminal for Tauri and Desktop React applications.**
 
-StudioLog is a beautiful, terminal-style debug console that lives inside your app. Perfect for Tauri applications, kiosk mode, or anywhere DevTools aren't available.
+StudioLog is a professional, resident debug console designed for modern desktop apps. It solves the "Black Box" problem in Tauri release builds by providing a beautiful, terminal-style interface for logs, system health, and command execution directly inside your window.
 
 ![StudioLog](./demo.png)
 
+## Why StudioLog?
+
+Tauri and Electron applications often disable browser DevTools in final production builds. StudioLog bridge this gap, giving you a powerful developer environment that your testers and users can access even when standard inspection tools are locked.
+
 ## Features
 
-- **Resident Console** - Always available within your app window
-- **Terminal Commands** - `filter`, `grep`, `export`, `theme`, and more
-- **Multiple Themes** - Dracula, Nord, Matrix, Synthwave
-- **Dock Modes** - Bottom, Right, or Floating window
-- **Boot Animation** - Cool terminal-style startup sequence
-- **Keyboard Shortcut** - Toggle with `Cmd+J` / `Ctrl+J`
-- **Zero Network** - All data stays local, no telemetry
-- **TypeScript** - Full type definitions included
+- **Tauri Native Feel** - Deep terminal aesthetic matching system tool designs
+- **Resident Debugging** - Always available, especially in full-screen or kiosk modes
+- **Production-Ready** - Debug release builds without enabling unsecure DevTools
+- **Terminal Commands** - Run `filter`, `grep`, `status`, `memory`, and `fps` on the fly
+- **Multi-Theme Engine** - Dracula, Nord, Matrix, and Synthwave presets
+- **Zero-Network Policy** - No telemetry. No external calls. 100% privacy-focused.
+- **Universal compatibility** - While optimized for Tauri, it works flawlessly in any React browser app.
 
 ## Installation
 
@@ -33,7 +36,11 @@ export default function App({ children }) {
   return (
     <>
       {children}
-      <Peek enabled={true} />
+      {/* 
+          Pro-tip: Only enable in dev or via a secret 
+          keyboard shortcut for production support 
+      */}
+      <Peek enabled={process.env.NODE_ENV === 'development'} />
     </>
   )
 }
@@ -43,45 +50,34 @@ export default function App({ children }) {
 
 | Command | Description |
 |---------|-------------|
-| `help` | Show all commands |
-| `clear` | Clear the console |
-| `filter <level>` | Filter by log level (error, warn, info, log, debug) |
-| `grep <term>` | Search logs containing term |
-| `theme <name>` | Switch theme (dracula, nord, matrix, synthwave) |
-| `dock` | Cycle dock position |
-| `export` | Copy logs to clipboard as markdown |
-| `info` | Show ASCII art system info |
-| `status` | Show session health |
-| `uptime` | Show session duration |
-| `memory` | Show JS heap usage |
-| `fps` | Show current frame rate |
+| `help` | Show all available commands |
+| `clear` | Wipe the terminal buffer |
+| `filter <level>` | Log level isolation (error, warn, info, etc) |
+| `grep <term>` | Full-text search across all logs |
+| `theme <name>` | dracula, nord, matrix, synthwave |
+| `dock` | Cycle position: bottom, right, or floating |
+| `status` | System health and session metrics |
+| `memory` | Real-time JS heap tracking |
+| `fps` | Frame rate monitoring for UI performance |
 
 ## Themes
 
-- **Dracula** (default) - Purple-tinted dark theme
-- **Nord** - Cool, arctic color palette
-- **Matrix** - Retro green-on-black
-- **Synthwave** - Neon 80s aesthetic
+- **Dracula** (default) - High-contrast purple
+- **Nord** - Clean, arctic professional
+- **Matrix** - Classic hacker aesthetic
+- **Synthwave** - Neon 80s debugging
 
 ## Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `enabled` | `boolean` | `true` | Enable/disable the console |
+| `enabled` | `boolean` | `true` | Show or hide the console trigger |
 
 ## Development
 
 ```bash
-# Install dependencies
 npm install
-
-# Run tests
-npm test
-
-# Build for production
 npm run build
-
-# Watch mode
 npm run dev
 ```
 

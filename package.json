@@ -1,7 +1,7 @@
 {
     "name": "studiolog",
-    "version": "0.1.1",
-    "description": "Premium in-app debug console for React applications",
+    "version": "0.1.2",
+    "description": "Essential in-app terminal for Tauri and Desktop React applications",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
