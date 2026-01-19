@@ -138,7 +138,7 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
         const banner = `
 ╔══════════════════════════════════════════════════╗
 ║                                                  ║
-║   S T U D I O   ░▒▓█  L O G  █▓▒░   v2.1        ║
+║   STUDIOLOG FOR TAURI  ▒▓█  v2.1  █▓▒░           ║
 ║                                                  ║
 ╚══════════════════════════════════════════════════╝`
 
@@ -282,7 +282,7 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
         if (c === 'help') {
             output = `
 ╔══════════════════════════════════════════════════════════════════════╗
-║  STUDIOLOG v2.1.0 • COMMAND REFERENCE                                ║
+║  STUDIOLOG FOR TAURI • COMMAND REFERENCE             ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║  UTILITIES                                                           ║
 ║    help              Display this menu                               ║
@@ -459,7 +459,8 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
        ╚█████╗     ██║   ██║   ██║██║  ██║██║██║   ██║
         ╚═══██╗    ██║   ██║   ██║██║  ██║██║██║   ██║
        ██████╔╝    ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
-       ╚═════╝     ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ LOG
+       ╚═════╝     ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝
+       > STUDIO LOG FOR TAURI [CORE ENGINE]
        ───────────────────────────────────────────────
        Session:    ${sessionId}
        Uptime:     ${Math.floor(uptimeMs / 60000)}m ${Math.floor((uptimeMs % 60000) / 1000)}s
@@ -642,7 +643,7 @@ export function LogViewerShell({ enabled = true }: { enabled?: boolean }) {
                             <div className="flex items-center gap-3">
                                 <span className="sl-bold text-xs tracking-wider flex items-center gap-2" style={{ color: 'var(--sl-cyan)' }}>
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 17l6-6-6-6M12 19h8" /></svg>
-                                    STUDIOLOG
+                                    STUDIOLOG FOR TAURI
                                 </span>
                                 <div className="h-3 w-[1px]" style={{ backgroundColor: 'var(--sl-bg-lighter)' }} />
                                 <span className="text-[10px] opacity-60 font-mono tracking-tight" style={{ color: 'var(--sl-fg-dim)' }}>

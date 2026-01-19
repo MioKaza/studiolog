@@ -1,7 +1,7 @@
 {
-    "name": "studiolog",
+    "name": "studiolog-tauri",
     "version": "0.1.2",
-    "description": "Essential in-app terminal for Tauri and Desktop React applications",
+    "description": "Essential in-app terminal and debug console for Tauri and React desktop applications",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",

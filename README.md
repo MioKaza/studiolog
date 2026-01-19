@@ -1,6 +1,6 @@
-# StudioLog
+# StudioLog for Tauri
 
-**The essential in-app terminal for Tauri and Desktop React applications.**
+**The essential in-app terminal and debug console for Tauri and React desktop applications.**
 
 StudioLog is a professional, resident debug console designed for modern desktop apps. It solves the "Black Box" problem in Tauri release builds by providing a beautiful, terminal-style interface for logs, system health, and command execution directly inside your window.
 
@@ -23,14 +23,14 @@ Tauri and Electron applications often disable browser DevTools in final producti
 ## Installation
 
 ```bash
-npm install studiolog
+npm install studiolog-tauri
 ```
 
 ## Usage
 
 ```tsx
-import { Peek } from 'studiolog'
-import 'studiolog/styles.css'
+import { Peek } from 'studiolog-tauri'
+import 'studiolog-tauri/styles.css'
 
 export default function App({ children }) {
   return (
