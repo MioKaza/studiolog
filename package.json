@@ -1,6 +1,6 @@
 {
-    "name": "@miokaza/studiolog",
-    "version": "0.1.0",
+    "name": "studiolog",
+    "version": "0.1.1",
     "description": "Premium in-app debug console for React applications",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
@@ -11,12 +11,13 @@
             "import": "./dist/index.mjs",
             "require": "./dist/index.js"
         },
-        "./styles.css": "./dist/studiolog.css"
+        "./styles.css": "./dist/index.css"
     },
     "files": [
         "dist",
         "README.md",
-        "LICENSE"
+        "LICENSE",
+        "demo.png"
     ],
     "scripts": {
         "build": "tsup",

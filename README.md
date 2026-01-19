@@ -4,7 +4,7 @@
 
 StudioLog is a beautiful, terminal-style debug console that lives inside your app. Perfect for Tauri applications, kiosk mode, or anywhere DevTools aren't available.
 
-![StudioLog Demo](https://raw.githubusercontent.com/miokazalabs/studiolog/main/demo.gif)
+![StudioLog](./demo.png)
 
 ## Features
 
@@ -20,14 +20,14 @@ StudioLog is a beautiful, terminal-style debug console that lives inside your ap
 ## Installation
 
 ```bash
-npm install @miokaza/studiolog
+npm install studiolog
 ```
 
 ## Usage
 
 ```tsx
-import { Peek } from '@miokaza/studiolog'
-import '@miokaza/studiolog/styles.css'
+import { Peek } from 'studiolog'
+import 'studiolog/styles.css'
 
 export default function App({ children }) {
   return (

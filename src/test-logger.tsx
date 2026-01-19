@@ -12,7 +12,7 @@ export function TestLogger() {
 
     // Test nested object
     console.log('Project details:', {
-      name: 'TofuKit',
+      name: 'StudioKit',
       version: '1.0.0',
       features: ['StudioLog', 'Notes', 'Kanban'],
       metadata: { lastUpdated: new Date().toISOString() }
